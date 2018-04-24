@@ -27,12 +27,12 @@ step 2: First create new messageBase object as global variable;
 var msg1 = new messageBase();
 
 step 3 (a) : to show server message
-            window.onload = function () {
+           window.onload = function () {
                 msg1.runServer()
             }
             
-        (2): to show client side message:
-         msg1.showMessage(1, 1, "Test Message", document.querySelector(".message"))
+        (b): to show client side message:
+        msg1.showMessage(1, 1, "Test Message", document.querySelector(".message"))
 
 
 
