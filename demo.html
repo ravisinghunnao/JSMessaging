@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="message.css" rel="stylesheet" />
+    <script src="Messaging.js"></script>
+</head>
+<body style="padding:20px;">
+    <div class="message">{"messageType":"1","displayType":"1","text":"Success message"}</div>
+
+    <div class="message">{"messageType":"2","displayType":"1","text":"Error message"}</div>
+
+    <input type="button" onclick="showmsg()" value="Show message from client" />
+    <input type="button" onclick="showmsg1()" value="Show warning popup" />
+
+    <script>
+        var msg1 = new messageBase();
+        window.onload = function () {
+            msg1.runServer()
+        }
+
+
+        function showmsg() {
+            msg1.showMessage(1, 1, "Test Message", document.querySelector(".message"))
+
+        }
+        function showmsg1() {
+            msg1.showMessage(3, 2, "Test Message", document.querySelector(".message"))
+
+        }
+
+    </script>
+</body>
+</html>
