@@ -15,7 +15,7 @@ There are four main properties in this object.
 
 Usage:
 step1: set class property of any div to "message". set innerhtml of this div to 
-            ```{"messageType":"1","displayType":"1","text":"Success message"}
+            {"messageType":"1","displayType":"1","text":"Success message"}
 
 if need to show message from server else keep it blank. messagetype, displaytype and text values can be modified as per requirement.
 if need to display error message then messagetype should be 2 like below:
