@@ -32,6 +32,7 @@ step 3 (a) : to show server message
             }
             
         (b): to show client side message:
+        
         msg1.showMessage(1, 1, "Test Message", document.querySelector(".message"))
 
 
